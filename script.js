@@ -1,8 +1,18 @@
 let saveButton = document.getElementById('input-btn');
 let myLeads = [];
 const inputEl = document.getElementById('input-el');
+const ulEl = document.getElementById('ul-el');
 
 saveButton.addEventListener("click", function(){
-    console.log("Clicked!");
     myLeads.push(inputEl.value);
+    renderLeads();
 });
+
+
+function renderLeads(){
+let lisItems = [];
+for (let i = 0; i < myLeads.length; i++){
+    lisItems += "<li>" + myLeads[i]
+}
+ulEl.innerHTML = lisItems;
+}
