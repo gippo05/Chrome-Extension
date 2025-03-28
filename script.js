@@ -16,11 +16,3 @@ for (let i = 0; i < myLeads.length; i++){
 }
 ulEl.innerHTML = lisItems;
 }
-
-let renderTwice = twiceLeads();
-
-function twiceLeads(){
-    for (let i = 0; i < 3; i++){
-        
-    }
-}
