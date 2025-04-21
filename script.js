@@ -13,7 +13,14 @@ saveButton.addEventListener("click", function(){
 function renderLeads(){
 let lisItems = [];
 for (let i = 0; i < myLeads.length; i++){
-    lisItems += "<li><a target = '_blank' href='"+ myLeads[i] + "'>" + myLeads[i] + "</a></li>"
+    lisItems += `
+            <li>
+                <a target='_blank' href='${myLeads[i]}'>
+                    ${myLeads[i]}
+                </a>
+            </li> 
+        `
+        
 }
 ulEl.innerHTML = lisItems;
 }
